@@ -1,0 +1,28 @@
+@import '../../assets/styles/constants.scss'; 
+
+header {
+    background: $color__gray--dark;
+}
+
+.nav {
+    height: 80px;
+    &__list {
+        padding-top: 23px;
+        &__item {
+            display: inline-block;
+            margin-left: 40px;
+            &:hover {
+                text-decoration: underline;
+            }
+            &__link{
+                color: $color__beige;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+                &.active{
+                    color: $color__blue--lighten;
+                }
+            }
+        }
+    }
+}
